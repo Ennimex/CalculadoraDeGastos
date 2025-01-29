@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Finanzas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Finanzas</h1>
+        <div class="balance">
+            <h2>Balance: <span id="balanceTotal">0</span></h2>
+        </div>
+        <div class="formulario">
+            <input type="number" id="monto" placeholder="Monto" min="0">
+            <input type="text" id="descripcion" placeholder="Descripción">
+            <button id="agregarIngreso">Agregar Ingreso</button>
+            <button id="agregarGasto">Agregar Gasto</button>
+        </div>
+        <div class="transacciones">
+            <h2>Historial de Transacciones</h2>
+            <ul id="listaTransacciones"></ul>
+        </div>
+    </div>
+    <script src="js/src/index.js"></script>
+</body>
+</html>
